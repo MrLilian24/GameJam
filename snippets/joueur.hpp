@@ -51,7 +51,7 @@ public:
 
     void Sauvegarder(FJoueur Player);
 
-    void Charger();
+    FJoueur Charger();
 
 private:
     /** Le pseudo du joueur */
