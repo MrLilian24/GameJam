@@ -1,3 +1,6 @@
+#pragma once
+#include "CoreMinimal.h"
+
 /**
  * @class FJoueur
  * @brief Classe représentant un joueur dans le jeu
