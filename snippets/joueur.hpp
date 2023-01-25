@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 
+
 /**
  * @class FJoueur
  * @brief Classe représentant un joueur dans le jeu
@@ -47,6 +48,10 @@ public:
     void SupprimerPieces(int32 NbPiecesASupprimer);
 
     void AjouterScore(int32 ScoreAAjouter);
+
+    void Sauvegarder(FJoueur Player);
+
+    void Charger();
 
 private:
     /** Le pseudo du joueur */

@@ -1,6 +1,7 @@
 #include "joueur.hpp"
 #include <iostream>
 
+
 /**
  * @brief Constructeur par défaut de FJoueur
  *
