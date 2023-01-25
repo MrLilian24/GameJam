@@ -52,8 +52,8 @@ private:
 /**
  * @brief Struct contenant les informations d'un joueur
  * 
- * Cette struct contient les informations d'un joueur, y compris le pseudo, le nombre de pièces et le score.
- * Il est utilisé pour retourner toutes les informations d'un joueur à la fois en utilisant la fonction GetInformations de FJoueur
+ * Cette structure contient les informations d'un joueur, y compris le pseudo, le nombre de pièces et le score.
+ * Elle est utilisée pour retourner toutes les informations d'un joueur à la fois en utilisant la fonction GetInformations de FJoueur
  */
 struct FJoueurInfo
 {
@@ -64,5 +64,5 @@ struct FJoueurInfo
 
 FJoueurInfo FJoueur::GetInformations() const
 {
-    return { Pseudo, NbPieces, Score};
+    return {Pseudo, NbPieces, Score};
 }
