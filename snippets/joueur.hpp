@@ -33,6 +33,13 @@ public:
      */
     ~FJoueur();
 
+    /**
+     * @brief Retourne les informations du joueur
+     * 
+     * @return les informations du joueur sous la forme d'un objet FJoueurInfo
+     */
+    FJoueurInfo GetInformations() const;
+
 private:
     /** Le pseudo du joueur */
     FString Pseudo;
@@ -41,3 +48,21 @@ private:
     /* Le score du joueur */
     int32 Score;
 };
+
+/**
+ * @brief Struct contenant les informations d'un joueur
+ * 
+ * Cette struct contient les informations d'un joueur, y compris le pseudo, le nombre de pièces et le score.
+ * Il est utilisé pour retourner toutes les informations d'un joueur à la fois en utilisant la fonction GetInformations de FJoueur
+ */
+struct FJoueurInfo
+{
+    FString Pseudo;
+    int32 NbPieces;
+    int32 Score;
+};
+
+FJoueurInfo FJoueur::GetInformations() const
+{
+    return { Pseudo, NbPieces, Score};
+}
