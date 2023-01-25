@@ -48,3 +48,18 @@ void FJoueur::AfficherInformations() const
     std::cout << "Nombre de pièces : " << NbPieces << std::endl;
     std::cout << "Score : " << Score << std::endl;
 }
+
+void FJoueur::AjouterPieces(int32 NbPiecesAAjouter)
+{
+    NbPieces += NbPiecesAAjouter;
+}
+
+void FJoueur::SupprimerPieces(int32 NbPiecesASupprimer)
+{
+    NbPieces -= NbPiecesASupprimer;
+}
+
+void FJoueur::AjouterScore(int32 ScoreAAjouter)
+{
+    Score += ScoreAAjouter;
+}

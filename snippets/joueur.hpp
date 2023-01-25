@@ -40,6 +40,14 @@ public:
      */
     FJoueurInfo GetInformations() const;
 
+    void AfficherInformations() const;
+
+    void AjouterPieces(int32 NbPiecesAAjouter);
+
+    void SupprimerPieces(int32 NbPiecesASupprimer);
+
+    void AjouterScore(int32 ScoreAAjouter);
+
 private:
     /** Le pseudo du joueur */
     FString Pseudo;
