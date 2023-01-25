@@ -8,7 +8,9 @@
  */
 FJoueur::FJoueur()
     : Pseudo(""), NbPieces(0), Score(0)
-{}
+{
+    std::cout << "Joueur créer par le Constructeur par défaut de FJoueur" << std::endl; //Debug
+}
 
 /**
  * @brief Constructeur avec valeurs initiales de FJoueur
@@ -21,7 +23,9 @@ FJoueur::FJoueur()
  */
 FJoueur::FJoueur(FString InPseudo, int32 InNbPieces, int32 InScore)
     : Pseudo(InPseudo), NbPieces(InNbPieces), Score(InScore)
-{}
+{
+    std::cout << "Joueur créer par le Constructeur avec valeurs initiales de FJoueur" << std::endl; //Debug
+}
 
 /**
  * @brief Destructeur de FJoueur
@@ -29,7 +33,9 @@ FJoueur::FJoueur(FString InPseudo, int32 InNbPieces, int32 InScore)
  * Libère les ressources utilisées par l'objet Joueur.
  */
 FJoueur::~FJoueur()
-{}
+{
+    std::cout << "Joueur détruit par le Destructeur de FJoueur" << std::endl; //Debug
+}
 
 /**
  * @brief Affiche les informations du joueur
